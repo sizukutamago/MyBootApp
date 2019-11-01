@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>welcome</title>
+</head>
+<body>
+    <h1>Sample</h1>
+    <p>this is sample page.</p>
+
+    <hr>
+
+    <p th:text="${list}"></p>
+
+    <ul th:each="obj : ${list}">
+        <li th:text="${obj}"></li>
+    </ul>
+</body>
+</html>
